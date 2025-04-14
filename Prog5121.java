@@ -18,7 +18,7 @@ public class Prog5121 {
         System.out.print("Enter your password: "); // requesting user to enter password
         String password = scanner.nextLine();
 
-        System.out.print("Enter cell number (+27): "); // requesting user for cellphone number 
+        System.out.print("Enter cellphone number (+27): "); // requesting user for cellphone number 
         String cell = scanner.nextLine();
 
         System.out.print("Enter your first name: ");  // requesting user for firstName
@@ -58,7 +58,7 @@ class Login {
     }
      // checking if details entered are correct
     public boolean checkUserName() {
-        return username.contains("_") && username.length() <= 10;
+        return username.contains("_") && username.length() <= 5;
     }
 
     public boolean checkPassword() {
@@ -77,7 +77,7 @@ class Login {
         boolean phoneValid = checkCellPhoneNumber();
 
         if (!usernameValid) {
-            return " The Username is not correctly formatted, please ensure that your username contains an underscore and is no more than ten characters in length.";
+            return " The Username is not correctly formatted, please ensure that your username contains an underscore and is no more than five characters in length.";
         }
 
         if (!passwordValid) {
